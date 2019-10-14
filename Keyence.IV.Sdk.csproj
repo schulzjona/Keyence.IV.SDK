@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\jona_\Desktop\New folder\Keyence.IV.Sdk.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A2B6EEB-7EAE-48CB-B45D-E621622C61B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Keyence.IV.Sdk</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.4.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Keyence.IV.Sdk</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SensorError.cs" />
+    <Compile Include="IvaProgramDescription.cs" />
+    <Compile Include="IvaFileException.cs" />
+    <Compile Include="ToolResultBase.cs" />
+    <Compile Include="IVisionSensor.cs" />
+    <Compile Include="ToolResultUpdatedEventHandler.cs" />
+    <Compile Include="IPossiblyUpdated.cs" />
+    <Compile Include="ToolResultUpdatedEventArgs.cs" />
+    <Compile Include="ToolSettingBase.cs" />
+    <Compile Include="ImageAcquiredEventArgs.cs" />
+    <Compile Include="ThumbnailImage.cs" />
+    <Compile Include="IVisionSensorIVHSeries.cs" />
+    <Compile Include="WindowShape.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="ErrorDetectedEventArgs.cs" />
+    <Compile Include="ToolExtendResult.cs" />
+    <Compile Include="ImageAcquiredEventHandler.cs" />
+    <Compile Include="NamespaceDoc.cs" />
+    <Compile Include="ErrorDetectedEventHandler.cs" />
+    <Compile Include="MultiWindowShape.cs" />
+    <Compile Include="IvaFileErrors.cs" />
+    <Compile Include="ProgramDescription.cs" />
+    <Compile Include="ConnectionLostException.cs" />
+    <Compile Include="ToolScalingSetting.cs" />
+    <Compile Include="ProgramHeader.cs" />
+    <Compile Include="VisionSensorStore.cs" />
+    <Compile Include="ToolScalingResult.cs" />
+    <Compile Include="IvaReader.cs" />
+    <Compile Include="ProgramSettingsUpdatedEventHandler.cs" />
+    <Compile Include="ProgramSettingsUpdatedEventArgs.cs" />
+    <Compile Include="AvailableNicExplorer.cs" />
+    <Compile Include="Common\VsaSettingMode.cs" />
+    <Compile Include="Common\UdpCmdDirection.cs" />
+    <Compile Include="Common\TriggerTypes.cs" />
+    <Compile Include="Common\SensorDetect.cs" />
+    <Compile Include="Common\VsaRunningInfo.cs" />
+    <Compile Include="Common\Option.cs" />
+    <Compile Include="Common\MacAddress.cs" />
+    <Compile Include="Common\SetUp.cs" />
+    <Compile Include="Common\SummaryOfTool.cs" />
+    <Compile Include="Common\OutTimerFunc.cs" />
+    <Compile Include="Common\ImageLoggingCond.cs" />
+    <Compile Include="Common\FlipReqIndex.cs" />
+    <Compile Include="Common\CommHeader.cs" />
+    <Compile Include="Common\BrightnessTable.cs" />
+    <Compile Include="Common\ScreenArea.cs" />
+    <Compile Include="Common\BankSettingVsa.cs" />
+    <Compile Include="Common\InType.cs" />
+    <Compile Include="Common\RequestForExchangeVersionInfo.cs" />
+    <Compile Include="Common\AutoFocus.cs" />
+    <Compile Include="Common\ReplyForExchangeVersionInfo.cs" />
+    <Compile Include="Common\MasterImageSet.cs" />
+    <Compile Include="Common\BankBrief.cs" />
+    <Compile Include="Common\UdpCmdKind.cs" />
+    <Compile Include="Common\ReplyForGetSensorData.cs" />
+    <Compile Include="Common\ReplyForGetSettingChangeInfo.cs" />
+    <Compile Include="Common\CameraSpec.cs" />
+    <Compile Include="Common\ZoomKind.cs" />
+    <Compile Include="Common\VisionSensorStateEnum.cs" />
+    <Compile Include="Common\AngleType.cs" />
+    <Compile Include="Common\SettingChangeInfo.cs" />
+    <Compile Include="Common\RequestForGetSystemSetting.cs" />
+    <Compile Include="Common\RequestForSetStateTransition.cs" />
+    <Compile Include="Common\ThumbnailImage.cs" />
+    <Compile Include="Common\ThumbnailColorImage.cs" />
+    <Compile Include="Common\ReplyForSetStateTransition.cs" />
+    <Compile Include="Common\BankSettingAll.cs" />
+    <Compile Include="Common\StructTpCalib.cs" />
+    <Compile Include="Common\VsaKindAvailable.cs" />
+    <Compile Include="Common\VisionSensorMode.cs" />
+    <Compile Include="Common\VisionSensorProof.cs" />
+    <Compile Include="Common\SettingVersion.cs" />
+    <Compile Include="Common\ReplyForQueryConfirmSystemSettingStatus.cs" />
+    <Compile Include="Common\Security.cs" />
+    <Compile Include="Common\RegStatusMasterImg.cs" />
+    <Compile Include="Common\FocusType.cs" />
+    <Compile Include="Common\Available.cs" />
+    <Compile Include="Common\StructSize.cs" />
+    <Compile Include="Common\ModelName.cs" />
+    <Compile Include="Common\ThumbnailMonoImage.cs" />
+    <Compile Include="Common\RequestForStartConfirmBankSetting.cs" />
+    <Compile Include="Common\InOutSetting.cs" />
+    <Compile Include="Common\RequestForSwitchBank.cs" />
+    <Compile Include="Common\ReplyForSwitchBank.cs" />
+    <Compile Include="Common\Utility.cs" />
+    <Compile Include="Common\FocusDistance.cs" />
+    <Compile Include="Common\ErrorLevels.cs" />
+    <Compile Include="Common\CommDataKind.cs" />
+    <Compile Include="Common\WriteBalance.cs" />
+    <Compile Include="Common\TriggerSetting.cs" />
+    <Compile Include="Common\Summary.cs" />
+    <Compile Include="Common\MonoImage.cs" />
+    <Compile Include="Common\ImageSetMono.cs" />
+    <Compile Include="Common\RgbKind.cs" />
+    <Compile Include="Common\IoType.cs" />
+    <Compile Include="Common\RequestForGetSettingChangeInfo.cs" />
+    <Compile Include="Common\BankSettingCommon.cs" />
+    <Compile Include="Common\Bank.cs" />
+    <Compile Include="Common\VsData.cs" />
+    <Compile Include="Common\VisionSensorUpdateStatus.cs" />
+    <Compile Include="Common\TcpCmdKind.cs" />
+    <Compile Include="Common\InPattern.cs" />
+    <Compile Include="Common\ColorFilterKind.cs" />
+    <Compile Include="Common\RequestForManualTrigger.cs" />
+    <Compile Include="Common\RectArea.cs" />
+    <Compile Include="Common\MonitorVersion.cs" />
+    <Compile Include="Common\MasterImage.cs" />
+    <Compile Include="Common\InSetting.cs" />
+    <Compile Include="Common\VisionSensorError.cs" />
+    <Compile Include="Common\RegressionState.cs" />
+    <Compile Include="Common\ReplyForGetBankSetting.cs" />
+    <Compile Include="Common\RequestForGetInitialModeState.cs" />
+    <Compile Include="Common\ReplyForGetInitialModeState.cs" />
+    <Compile Include="Common\ImageKind.cs" />
+    <Compile Include="Common\ReplyForSetBankSetting.cs" />
+    <Compile Include="Common\VisionSensorState.cs" />
+    <Compile Include="Common\RequestForStartConfirmSystemSetting.cs" />
+    <Compile Include="Common\LightPwmCorrection.cs" />
+    <Compile Include="Common\NetworkKindAvailable.cs" />
+    <Compile Include="Common\ImageLoggingState.cs" />
+    <Compile Include="Common\DebugInfoKind.cs" />
+    <Compile Include="Common\CmosType.cs" />
+    <Compile Include="Common\VisionSensorSystemSetting.cs" />
+    <Compile Include="Common\ReplyForQueryConfirmBankSettingStatus.cs" />
+    <Compile Include="Common\ColorImage.cs" />
+    <Compile Include="Common\ImageSetColor.cs" />
+    <Compile Include="Common\VisionSensorType.cs" />
+    <Compile Include="Common\LightingMode.cs" />
+    <Compile Include="Common\BrightnessMode.cs" />
+    <Compile Include="Common\ReplyForClearError.cs" />
+    <Compile Include="Common\VisionSensorVersion.cs" />
+    <Compile Include="Common\RequestForGetBankSetting.cs" />
+    <Compile Include="Common\RunningInfoSetting.cs" />
+    <Compile Include="Common\RequestForQueryConfirmBankSettingStatus.cs" />
+    <Compile Include="Common\ReplyForGetBankList.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\HardwareVersion.cs" />
+    <Compile Include="Common\VsaKind.cs" />
+    <Compile Include="Common\RequestForClearError.cs" />
+    <Compile Include="Common\RequestForSetBankSetting.cs" />
+    <Compile Include="Common\ReplyForManualTrigger.cs" />
+    <Compile Include="Common\BrightnessModeThre.cs" />
+    <Compile Include="Common\RequestForGetBankList.cs" />
+    <Compile Include="Common\PictureSetting.cs" />
+    <Compile Include="Common\HistogramOfTool.cs" />
+    <Compile Include="Common\Histogram.cs" />
+    <Compile Include="Common\InOut.cs" />
+    <Compile Include="Common\OutPattern.cs" />
+    <Compile Include="Common\RequestForGetSensorData.cs" />
+    <Compile Include="Common\ReplyForGetSystemSetting.cs" />
+    <Compile Include="Common\LightAdjustSetting.cs" />
+    <Compile Include="Common\BankName.cs" />
+    <Compile Include="Common\ReplyForStartConfirmBankSetting.cs" />
+    <Compile Include="Common\OutSetting.cs" />
+    <Compile Include="Common\MachineName.cs" />
+    <Compile Include="Common\StateOption.cs" />
+    <Compile Include="Common\RegStatusSensor.cs" />
+    <Compile Include="Common\ErrI.cs" />
+    <Compile Include="Common\RequestForQueryConfirmSystemSettingStatus.cs" />
+    <Compile Include="Common\ReplyForStartConfirmSystemSetting.cs" />
+    <Compile Include="Common\IVAFile\IvaFileHandler.cs" />
+    <Compile Include="Common\IVAFile\IvaBlockId.cs" />
+    <Compile Include="Common\IVAFile\IvCommonBlockHeader.cs" />
+    <Compile Include="Common\IVAFile\IvffResult.cs" />
+    <Compile Include="Common\IVAFile\IvThumbnailImage.cs" />
+    <Compile Include="Common\IVAFile\IvThumbnailColor.cs" />
+    <Compile Include="Common\IVAFile\Ivff.cs" />
+    <Compile Include="Common\IVAFile\IvCommonFileHandler.cs" />
+    <Compile Include="Common\IVAFile\BlockOffsetIndex.cs" />
+    <Compile Include="Common\IVAFile\IvVariableArrayBlockHeader.cs" />
+    <Compile Include="Common\IVAFile\IvVariableArrayElement.cs" />
+    <Compile Include="Common\IVAFile\IvBankSettingBlockHeader.cs" />
+    <Compile Include="Common\IVAFile\Holder`1.cs" />
+    <Compile Include="Common\IVAFile\IvSoftwareVersion.cs" />
+    <Compile Include="Common\IVAFile\IvVersionInfoData.cs" />
+    <Compile Include="Common\IVAFile\IvCommonCheckWork.cs" />
+    <Compile Include="Common\IVAFile\IvBankList.cs" />
+    <Compile Include="Common\IVAFile\IvFixedArrayBlockHeader.cs" />
+    <Compile Include="Common\IVAFile\IvaUtils.cs" />
+    <Compile Include="Common\IVAFile\IvThumbnailMono.cs" />
+    <Compile Include="Communication\StringConverter.cs" />
+    <Compile Include="Communication\SettingChangeException.cs" />
+    <Compile Include="Communication\ConcreteSensorError.cs" />
+    <Compile Include="Communication\ICauseError.cs" />
+    <Compile Include="Communication\IProgress.cs" />
+    <Compile Include="Communication\ToolResultInternalBase.cs" />
+    <Compile Include="Communication\PositionAdjustIncludeToolResult.cs" />
+    <Compile Include="Communication\OutlineToolResult.cs" />
+    <Compile Include="Communication\ToolSettingInternalBase.cs" />
+    <Compile Include="Communication\OutlineToolSetting.cs" />
+    <Compile Include="Communication\IConnectionFactory.cs" />
+    <Compile Include="Communication\ConnectionFactory.cs" />
+    <Compile Include="Communication\UnrecognizedToolSetting.cs" />
+    <Compile Include="Communication\PositionAdjustToolSettingBase.cs" />
+    <Compile Include="Communication\TwoAxisAdjustmentToolSetting.cs" />
+    <Compile Include="Communication\ITcpCommand.cs" />
+    <Compile Include="Communication\CheckedTcpCommand.cs" />
+    <Compile Include="Communication\SensorErrorCollection.cs" />
+    <Compile Include="Communication\ConcreteImageAcquiredEventArgs.cs" />
+    <Compile Include="Communication\ISensorData.cs" />
+    <Compile Include="Communication\IProgramSetting.cs" />
+    <Compile Include="Communication\PositionAdjustExcludeToolResult.cs" />
+    <Compile Include="Communication\EdgeToolResult.cs" />
+    <Compile Include="Communication\ScalingToolSettingBase.cs" />
+    <Compile Include="Communication\DiameterToolSetting.cs" />
+    <Compile Include="Communication\ColorAreaToolSetting.cs" />
+    <Compile Include="Communication\AutoCommunicator.cs" />
+    <Compile Include="Communication\IConfiguredBits.cs" />
+    <Compile Include="Communication\RectangleWindow.cs" />
+    <Compile Include="Communication\NoneToolResult.cs" />
+    <Compile Include="Communication\ISensorModeState.cs" />
+    <Compile Include="Communication\VisionSensor.cs" />
+    <Compile Include="Communication\VisionSensorIVHSeries.cs" />
+    <Compile Include="Communication\ExecutingMonitorExplorer.cs" />
+    <Compile Include="Communication\IErrorRepository.cs" />
+    <Compile Include="Communication\ErrorRepository.cs" />
+    <Compile Include="Communication\ConcreteImage.cs" />
+    <Compile Include="Communication\IDataRepository.cs" />
+    <Compile Include="Communication\ConcreteErrorDetectedEventArgs.cs" />
+    <Compile Include="Communication\IManualTriggerResult.cs" />
+    <Compile Include="Communication\ManualTriggerResult.cs" />
+    <Compile Include="Communication\NoneToolSetting.cs" />
+    <Compile Include="Communication\MonochromeAreaToolSetting.cs" />
+    <Compile Include="Communication\EdgePixelsToolSetting.cs" />
+    <Compile Include="Communication\MonochromeAreaToolResult.cs" />
+    <Compile Include="Communication\ISensorSystemSetting.cs" />
+    <Compile Include="Communication\SensorSystemSetting.cs" />
+    <Compile Include="Communication\WorkSpace.cs" />
+    <Compile Include="Communication\PositionAdjustToolResultBase.cs" />
+    <Compile Include="Communication\TcpCommand.cs" />
+    <Compile Include="Communication\IAsyncProcessStartResult.cs" />
+    <Compile Include="Communication\StartConfirmSystemSettingResult.cs" />
+    <Compile Include="Communication\ISensorCurrentSettingInformation.cs" />
+    <Compile Include="Communication\WidthToolResult.cs" />
+    <Compile Include="Communication\IClearErrorResult.cs" />
+    <Compile Include="Communication\ClearErrorResult.cs" />
+    <Compile Include="Communication\ColorAreaToolResult.cs" />
+    <Compile Include="Communication\WindowShapeCreator.cs" />
+    <Compile Include="Communication\ProgramSetting.cs" />
+    <Compile Include="Communication\PitchToolResult.cs" />
+    <Compile Include="Communication\OneAxisAdjustmentToolSetting.cs" />
+    <Compile Include="Communication\DiameterToolResult.cs" />
+    <Compile Include="Communication\ConfiguredBits.cs" />
+    <Compile Include="Communication\ToolKindBase.cs" />
+    <Compile Include="Communication\VisionSensorRepository.cs" />
+    <Compile Include="Communication\IConnection.cs" />
+    <Compile Include="Communication\VisionSensorConection.cs" />
+    <Compile Include="Communication\IProgramList.cs" />
+    <Compile Include="Communication\ProgramList.cs" />
+    <Compile Include="Communication\PositionAdjustToolSetting.cs" />
+    <Compile Include="Communication\EmptyWindow.cs" />
+    <Compile Include="Communication\DataRepository.cs" />
+    <Compile Include="Communication\WidthToolSetting.cs" />
+    <Compile Include="Communication\OneAxisAdjustmentToolResult.cs" />
+    <Compile Include="Communication\ConcreteProgramDescription.cs" />
+    <Compile Include="Communication\EdgeToolSetting.cs" />
+    <Compile Include="Communication\StartConfirmBankSettingResult.cs" />
+    <Compile Include="Communication\IProgramNo.cs" />
+    <Compile Include="Communication\ProgramNo.cs" />
+    <Compile Include="Communication\PitchToolSetting.cs" />
+    <Compile Include="Communication\CommandSequencer.cs" />
+    <Compile Include="Communication\ConcreteToolResultUpdatedEventArgs.cs" />
+    <Compile Include="Communication\PositionAdjustToolResult.cs" />
+    <Compile Include="Communication\SensorModeState.cs" />
+    <Compile Include="Communication\SensorCurrentSettingInformation.cs" />
+    <Compile Include="Communication\UnrecognizedToolResult.cs" />
+    <Compile Include="Communication\ToolResultRender.cs" />
+    <Compile Include="Communication\ISensorVersion.cs" />
+    <Compile Include="Communication\SensorVersion.cs" />
+    <Compile Include="Communication\EdgePixelsToolResult.cs" />
+    <Compile Include="Communication\CircleWindow.cs" />
+    <Compile Include="Communication\SettingVersion.cs" />
+    <Compile Include="Communication\SensorData.cs" />
+    <Compile Include="Communication\Progress.cs" />
+    <Compile Include="Communication\TwoAxisAdjustmentToolResult.cs" />
+    <Compile Include="Communication\ConcreteProgramSettingsUpdatedEventArgs.cs" />
+    <Compile Include="Algorithm\VectorAreaType.cs" />
+    <Compile Include="Algorithm\VectoreAreaItemCircle.cs" />
+    <Compile Include="Algorithm\ThresholdWithHiSetting.cs" />
+    <Compile Include="Algorithm\EdgeWidthSensorRegisterSetting.cs" />
+    <Compile Include="Algorithm\EdgeWidthSensorResult.cs" />
+    <Compile Include="Algorithm\EdgePresenceThresholdWithHiSetting.cs" />
+    <Compile Include="Algorithm\EdgePixelCountSensorResult.cs" />
+    <Compile Include="Algorithm\DiameterScore.cs" />
+    <Compile Include="Algorithm\SensorOperationSetting.cs" />
+    <Compile Include="Algorithm\PositionAdjustSetting.cs" />
+    <Compile Include="Algorithm\EdgePresenceSensorMask.cs" />
+    <Compile Include="Algorithm\EdgePixelExtract.cs" />
+    <Compile Include="Algorithm\PositionControl.cs" />
+    <Compile Include="Algorithm\PositionAdjustRegisterSetting.cs" />
+    <Compile Include="Algorithm\NinePixelMapToOneBitBinaryImage.cs" />
+    <Compile Include="Algorithm\Hsv.cs" />
+    <Compile Include="Algorithm\EdgePresenceMatchPercentLimitSetting.cs" />
+    <Compile Include="Algorithm\CountSensorOperationSetting.cs" />
+    <Compile Include="Algorithm\TrapezoidProof.cs" />
+    <Compile Include="Algorithm\TwoAxesPosAdjustResult.cs" />
+    <Compile Include="Algorithm\ScalingDispSetting.cs" />
+    <Compile Include="Algorithm\PartOfTwoAxesresult.cs" />
+    <Compile Include="Algorithm\OneAxisPosAdjustSensorRegisterSetting.cs" />
+    <Compile Include="Algorithm\EdgeWidthSensorSetting.cs" />
+    <Compile Include="Algorithm\CircleDetect.cs" />
+    <Compile Include="Algorithm\VectoreAreaItemEllipse.cs" />
+    <Compile Include="Algorithm\PointN.cs" />
+    <Compile Include="Algorithm\OneOfTwoAxesResult.cs" />
+    <Compile Include="Algorithm\EdgePitchSensorSetting.cs" />
+    <Compile Include="Algorithm\CountSensorRegisterSetting.cs" />
+    <Compile Include="Algorithm\AreaExtractPosition.cs" />
+    <Compile Include="Algorithm\AreaColorSensorOperationSetting.cs" />
+    <Compile Include="Algorithm\OneAxisPosAdjustResult.cs" />
+    <Compile Include="Algorithm\CountSensorSetting.cs" />
+    <Compile Include="Algorithm\CountSensorResult.cs" />
+    <Compile Include="Algorithm\AreaColorSensorRegisterSetting.cs" />
+    <Compile Include="Algorithm\ShapeSensorResult.cs" />
+    <Compile Include="Algorithm\PointL.cs" />
+    <Compile Include="Algorithm\OneOfTwoAxesRegisterSetting.cs" />
+    <Compile Include="Algorithm\SensorSetting.cs" />
+    <Compile Include="Algorithm\SensorRegisterSettingDetail.cs" />
+    <Compile Include="Algorithm\OneAxisPosAdjustSensorOperationSetting.cs" />
+    <Compile Include="Algorithm\EdgeInfo.cs" />
+    <Compile Include="Algorithm\DiameterSensorResult.cs" />
+    <Compile Include="Algorithm\AreaHsvThreshold.cs" />
+    <Compile Include="Algorithm\TrapezoidAdjust.cs" />
+    <Compile Include="Algorithm\ReservedSensorSetting.cs" />
+    <Compile Include="Algorithm\HighThresholdSetting.cs" />
+    <Compile Include="Algorithm\TwoAxesPosAdjustSensorRegisterSetting.cs" />
+    <Compile Include="Algorithm\PositionAdjustResult.cs" />
+    <Compile Include="Algorithm\DiameterValidArea.cs" />
+    <Compile Include="Algorithm\Constants.cs" />
+    <Compile Include="Algorithm\VectorAreaItems.cs" />
+    <Compile Include="Algorithm\VectorAreaItemHeader.cs" />
+    <Compile Include="Algorithm\ShapeSensorOperationSetting.cs" />
+    <Compile Include="Algorithm\SensorResult.cs" />
+    <Compile Include="Algorithm\OneAxisPosadjustSensorSetting.cs" />
+    <Compile Include="Algorithm\AreaMonoSensorRegisterSetting.cs" />
+    <Compile Include="Algorithm\ShapeSensorRegisterSetting.cs" />
+    <Compile Include="Algorithm\ShapeSearchResultItem.cs" />
+    <Compile Include="Algorithm\EdgePresenceSensorResult.cs" />
+    <Compile Include="Algorithm\EdgePixelCountSensorSetting.cs" />
+    <Compile Include="Algorithm\AreaExtractHsvSetting.cs" />
+    <Compile Include="Algorithm\VectorAreaItem.cs" />
+    <Compile Include="Algorithm\ShapeSensorSetting.cs" />
+    <Compile Include="Algorithm\PositionAdjustOperationSetting.cs" />
+    <Compile Include="Algorithm\PointW.cs" />
+    <Compile Include="Algorithm\AreaMonoSensorResult.cs" />
+    <Compile Include="Algorithm\AreaHsvThre.cs" />
+    <Compile Include="Algorithm\AreaColorSensorResult.cs" />
+    <Compile Include="Algorithm\EdgeWidthSensorMask.cs" />
+    <Compile Include="Algorithm\DiameterSensorRegisterSetting.cs" />
+    <Compile Include="Algorithm\SensorOperationSettingDetail.cs" />
+    <Compile Include="Algorithm\SensorJudgeResult.cs" />
+    <Compile Include="Algorithm\EdgePresenceSensorRegisterSetting.cs" />
+    <Compile Include="Algorithm\EdgePixelCountSensorRegisterSetting.cs" />
+    <Compile Include="Algorithm\EdgePitchSensorResult.cs" />
+    <Compile Include="Algorithm\DiameterSensorSetting.cs" />
+    <Compile Include="Algorithm\SensorRegisterSetting.cs" />
+    <Compile Include="Algorithm\TwoAxesPosadjustSensorSetting.cs" />
+    <Compile Include="Algorithm\ScalingSetting.cs" />
+    <Compile Include="Algorithm\EdgeMaskRectangle.cs" />
+    <Compile Include="Algorithm\AreaMonoSensorSetting.cs" />
+    <Compile Include="Algorithm\AreaMonoSensorOperationSetting.cs" />
+    <Compile Include="Algorithm\AreaColorSensorSetting.cs" />
+    <Compile Include="Algorithm\VectorAreaItemRectangle.cs" />
+    <Compile Include="Algorithm\EdgePresenceSensorSetting.cs" />
+    <Compile Include="Algorithm\EdgePitchSensorRegisterSetting.cs" />
+    <Compile Include="Algorithm\EdgeDesignAction.cs" />
+    <Compile Include="Algorithm\CircleDetectedDetail.cs" />
+    <Compile Include="Algorithm\AreaRegisterRecord.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
